@@ -64,7 +64,7 @@ class NewEditTaskViewController: UIViewController {
             titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             
             titleTextField.heightAnchor.constraint(equalToConstant: 20),
-            titleTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
+            titleTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
             titleTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             titleTextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             
@@ -72,7 +72,7 @@ class NewEditTaskViewController: UIViewController {
             dueDateLabel.topAnchor.constraint(equalTo: titleTextField.bottomAnchor, constant: 20),
             dueDateLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             
-            dueDatePicker.topAnchor.constraint(equalTo: dueDateLabel.bottomAnchor, constant: 10),
+            dueDatePicker.topAnchor.constraint(equalTo: dueDateLabel.bottomAnchor, constant: 20),
             dueDatePicker.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20)
             
             

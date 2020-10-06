@@ -89,13 +89,15 @@ class TaskTableViewCell: UITableViewCell {
     
     @objc func checkBoxButtonTapped() {
         if let _ = delegate {
-            checkBoxButton.backgroundColor = .green
-            status = true
-            delegate?.taskTableViewCell(indexPath!)
-        } else {
-            checkBoxButton.backgroundColor = .clear
-            status = false
-            delegate?.taskTableViewCell(indexPath!)
+            if status == false {
+                checkBoxButton.backgroundColor = .green
+                status = true
+                delegate?.taskTableViewCell(indexPath!)
+            } else {
+                checkBoxButton.backgroundColor = .clear
+                status = false
+                delegate?.taskTableViewCell(indexPath!)
+            }
         }
     }
 }

@@ -109,6 +109,12 @@ class TasksController: UIViewController {
         guard let date = task.due else { return }
         let dueDate = dateFormatter.string(from: date)
         cell.dueDateLabel.text = "Due by: \(dueDate)"
+        
+        if task.status {
+            cell.checkBoxButton.backgroundColor = .green
+        } else {
+            cell.checkBoxButton.backgroundColor = .clear
+        }
     }
     
     @objc func addTask() {
